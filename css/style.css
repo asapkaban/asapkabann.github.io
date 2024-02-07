@@ -1,0 +1,322 @@
+
+body{
+    margin: 0;
+    height: 100%;
+}
+.page{
+    max-width: 1170px;
+    margin: auto;
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+}
+/* HEADER  */
+.page .header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.page .header .nav a{
+    text-decoration: none;
+    color: #774E2E;
+    font-size: 16px;
+    height: fit-content;
+    font-weight: 500;
+    text-shadow: 0px 4px  4px #7c7c7c;
+}
+.page .header .nav a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+.page .header .nav a:first-child{
+    margin-right: 50px;
+}
+.page .header .nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.page .header .two{
+    display: none;
+}
+/* MAIN  */
+/* YUMMY PUG  */
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.content div h1{
+    color: #F37F34;
+    font-size: 110px;
+    text-shadow: 0 4px 4px #7c7c7c;
+    margin: 0;
+    margin-bottom: 40px;
+
+}
+.content div h1 span{
+    color: #774E2E;
+}
+.content div p{
+    color: #774E2E;
+    text-shadow: 0 4px 4px #7c7c7c;
+    font-size: 16px;
+    max-width: 572px;
+    margin-bottom: 50px;
+}
+.content div button{
+    border: none;
+    background-color: #774E2E;
+    padding: 22px 22px;
+    width: 340px;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0 4px 4px #7c7c7c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.content div button:hover{
+    background-color: #F37F34;
+    width: 400px;
+    height: 70px;
+}
+/* Products  */
+.background{
+    background-color: #FFF9EA;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+.products{
+    text-align: center;
+}
+.products h1{
+    font-size: 72px;
+    color: #F37F34;
+    font-weight: bold;
+    margin: 0;
+}
+.products h1 span{
+    color: #774E2E;
+}
+.products .items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    margin-top: 70px;
+}
+.products .items div{
+    max-width: 370px;
+    max-height: 460px;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+.products .items div p{
+    margin: 0 20px;
+    margin-bottom: 60px;
+}
+.products .items div:hover{
+    max-width: 400px;
+    background-color: #a5a5a5;
+    color: #FFF9EA;
+}
+.products .items div a{
+    text-decoration: none;
+    color: #000000;
+}
+.products .items div a:hover{
+    text-decoration: underline;
+}
+/* INFO  */
+.other{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.other .leftcontent{
+    max-width: 575px;
+    max-height: 640px;
+}
+.other .leftcontent div:first-child{
+    margin-bottom: 65px;
+}
+.other h1{
+    color: #F37F34;
+    font-size: 70px;
+    margin: 0 0 30px 0;
+}
+.other div div h1 span{
+    color: #774E2E;
+}
+.other div div p{
+    color: #774E2E;
+    font-size: 16px;
+}
+.other .leftcontent div h4{
+    font-size: 24px;
+    color: #774E2E;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.other .leftcontent div ul li{ 
+    color: #774E2E;
+    font-size: 16px;
+}
+/* FOOTER  */
+.footerback{
+    background-color: #774E2E;
+}
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 ;
+    flex-wrap: wrap;
+}
+.footercontent h1{
+    font-size: 36px;
+    color: #ffffff;
+}
+@media  (max-width: 1168px){
+    /* HEADER  */
+    .header{
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+    /* Main  */
+    .content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .products{
+        margin: 0 35px;
+        justify-content: space-around;
+    }
+    .other{
+        justify-content: center;
+    }
+    .footercontent{
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+
+}
+@media (max-width: 870px) {
+    .page .products .items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .page .products h1{
+        font-size: 50px;
+    }
+    .footercontent{
+        justify-content: center;
+        text-align: center;
+    }
+    .leftcontent{
+        text-align: center;
+    }
+    .leftcontent div ul{
+        text-align: left;
+    }
+}
+@media (max-width: 650px) {
+    .content div img{
+        max-width: 350px;
+    }
+    .other div img{
+        max-width: 350px;
+    }
+    .content div h1{
+        font-size: 75px;
+    }
+    .page .header .one{
+        display: none;
+    }
+        .page .header .two{
+            display: block;
+        }
+        .page .header .two img{
+            max-width: 70px;
+        }
+}
+@media (max-width: 630px) {
+    .content div p{
+        max-width: 400px;
+    }
+    .leftcontent div h1{
+        font-size: 55px;
+    }
+    .leftcontent div p{
+        max-width: 400px;
+    }
+    .footercontent h1{
+        font-size: 25px;
+    }
+    .page .products h1{
+        font-size: 35px;
+    }
+}
+@media (max-width: 440px) {
+    /* top  */
+    .content div h1{
+        font-size: 45px;
+    }
+    .content div p{
+        max-width: 280px;
+    }
+    .content div button{
+        max-width: 200px;
+        max-height: 100px;
+    }
+    .content div button:hover{
+        width: 200px;
+        max-height: 100px;
+    }
+    .content div img{
+        max-width: 250px;
+    }
+    /* meadle  */
+    .background{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .page .products h1{
+        font-size: 25px;
+    }
+    .products .items div{
+        max-width: 250px;
+    }
+    .products .items div:hover{
+        max-width: 270px;
+    }
+    .products .items div img{
+        width: 100%;
+    }
+    .products .items div p{
+        font-size: 13px;
+    }
+    /* bottom  */
+    .other .leftcontent div h1{
+        font-size: 35px;
+    }
+    .other .leftcontent div p{
+        font-size: 15px;
+        max-width: 270px;
+        margin: auto;
+    }
+    .other .leftcontent div h4{
+        font-size: 20px;
+        max-width: 280px;
+    }
+    .other div img{
+        max-width: 200px;
+    }
+    .page .other{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
